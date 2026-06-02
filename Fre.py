@@ -57,6 +57,7 @@ class MultiSpectralAttentionLayer(torch.nn.Module):
         )
 
     def forward(self, x):
+        print(1111111111)
         n, c, h, w = x.shape
         x_pooled = x
         if h != self.dct_h or w != self.dct_w:
